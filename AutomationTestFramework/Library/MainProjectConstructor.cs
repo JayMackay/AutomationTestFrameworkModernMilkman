@@ -2,12 +2,13 @@
 using AutomationTestFramework.Library.PageObjectModels;
 using OpenQA.Selenium;
 
-namespace AutomatedTestFramework.Library
+namespace AutomationTestFramework.Library
 {
     public class MainProjectConstructor
     {
         //Accessible read only page object models
         public readonly HomePage WebsiteHomePage;
+        public readonly RegistrationPage WebsiteRegistrationPage;
         public readonly IWebDriver seleniumDriver;
 
         //Constructor for driver and configurations for the service
@@ -18,6 +19,7 @@ namespace AutomatedTestFramework.Library
 
             //Instantation of page objects with the selenium driver
             WebsiteHomePage = new HomePage(seleniumDriver);
+            WebsiteRegistrationPage = new RegistrationPage(seleniumDriver);
         }
     }
 }

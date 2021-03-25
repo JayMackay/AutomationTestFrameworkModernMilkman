@@ -44,6 +44,18 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Cucumber.Messages": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
             "NUnit": {
               "target": "Package",
               "version": "[3.13.1, )"
@@ -76,9 +88,17 @@
               "target": "Package",
               "version": "[3.7.38, )"
             },
+            "SpecFlow.Tools.MsBuild.Generation": {
+              "target": "Package",
+              "version": "[3.7.38, )"
+            },
             "WebDriverChromeDriver": {
               "target": "Package",
               "version": "[2.10.0, )"
+            },
+            "gherkin": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
