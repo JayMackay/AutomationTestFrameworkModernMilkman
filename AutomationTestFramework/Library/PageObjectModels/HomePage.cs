@@ -24,5 +24,17 @@ namespace AutomationTestFramework.Library.PageObjectModels
         {
             _driver.Navigate().GoToUrl(mainPageUrl);
         }
+
+        public void EnterAvailableValidPostcode(string availablePostcode)
+        {
+            PostcodeInput.SendKeys(availablePostcode);
+            FindButton.Click();
+        }
+
+        public void EnterUnavailableValidPostcode(string unavailablePostcode)
+        {
+            PostcodeInput.SendKeys(unavailablePostcode);
+            FindButton.Click();
+        }
     }
 }
