@@ -1,0 +1,4 @@
+C:\Users\jared\source\repos\Automation Test Framework Modern Milkman\AutomationTestFramework\obj\Debug\netcoreapp3.1\AutomationTestFramework.csprojAssemblyReference.cache
+C:\Users\jared\source\repos\Automation Test Framework Modern Milkman\AutomationTestFramework\obj\Debug\netcoreapp3.1\AutomationTestFramework.AssemblyInfoInputs.cache
+C:\Users\jared\source\repos\Automation Test Framework Modern Milkman\AutomationTestFramework\obj\Debug\netcoreapp3.1\AutomationTestFramework.AssemblyInfo.cs
+C:\Users\jared\source\repos\Automation Test Framework Modern Milkman\AutomationTestFramework\obj\Debug\netcoreapp3.1\AutomationTestFramework.csproj.CoreCompileInputs.cache
