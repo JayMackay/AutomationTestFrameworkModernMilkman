@@ -6,13 +6,19 @@ namespace AutomationTestFramework.Library.PageObjectModels
     public class RegistrationPage
     {
         private IWebDriver _driver;
-        private string mainPageUrl = AppConfigReader.BaseUrl;
+        private string registrationPageUrl = AppConfigReader.RegistrationPageUrl;
 
         //Page Elements
-        private IWebElement PostcodeInput => this._driver.FindElement(By.Id("postcode"));
-        private IWebElement FindButton => this._driver.FindElement(By.Id("checkPostcode5"));
-        private IWebElement SignInButton => this._driver.FindElement(By.XPath("/img/images/Sign In Button.svg"));
-
+        private IWebElement WelcomeMessage => this._driver.FindElement(By.XPath("/html/body/section[@class='signup-page']/h"));
+        private IWebElement FirstNameInput => this._driver.FindElement(By.Id("forename"));
+        private IWebElement SurnameInput => this._driver.FindElement(By.Id("surname"));
+        private IWebElement EmailInput => this._driver.FindElement(By.Id("email"));
+        private IWebElement ConfirmEmailInput => this._driver.FindElement(By.Id("email1"));
+        private IWebElement PhoneNumberInput => this._driver.FindElement(By.Id("phoneNo"));
+        private IWebElement PasswordInput => this._driver.FindElement(By.Id("password"));
+        private IWebElement CreateAccountButton => this._driver.FindElement(By.XPath("/img/images/Create my account.svg"));
+        private IWebElement InvalidFormCheck => this._driver.FindElement(By.Id("swal2-content"));
+        
         //Page Object Model Constructor
         public RegistrationPage(IWebDriver driver)
         {
@@ -20,21 +26,34 @@ namespace AutomationTestFramework.Library.PageObjectModels
         }
 
         //Methods
-        public void VisitHomePage()
+        public void VisitRegistrationPage()
         {
-            _driver.Navigate().GoToUrl(mainPageUrl);
+            _driver.Navigate().GoToUrl(registrationPageUrl);
         }
 
-        public void EnterAvailableValidPostcode(string availablePostcode)
+        public string RegistrationPageWelcomeMessage()
         {
-            PostcodeInput.SendKeys(availablePostcode);
-            FindButton.Click();
+            return WelcomeMessage.Text;
         }
 
-        public void EnterUnavailableValidPostcode(string unavailablePostcode)
+        public void RegisterNewUser(string firstName, string surname, string email, string confirmEmail, string phoneNumber, string password)
         {
-            PostcodeInput.SendKeys(unavailablePostcode);
-            FindButton.Click();
+            FirstNameInput.SendKeys(firstName);
+            SurnameInput.SendKeys(surname);
+            EmailInput.SendKeys(email);
+            ConfirmEmailInput.SendKeys(confirmEmail);
+            PhoneNumberInput.SendKeys(phoneNumber);
+            PasswordInput.SendKeys(password);
+            CreateAccountButton.Click();
+        }
+
+        public bool BadEmailInput()
+        {
+            if (InvalidFormCheck.Enabled)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
