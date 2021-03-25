@@ -6,5 +6,6 @@ namespace AutomationTestFramework.ConfigurationFiles
     public static class AppConfigReader
     {
         public static readonly string BaseUrl = ConfigurationManager.AppSettings["base_url"];
+        public static readonly string RegistrationPageUrl = ConfigurationManager.AppSettings["registrationpage_url"];
     }
 }
