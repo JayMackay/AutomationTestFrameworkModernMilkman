@@ -13,7 +13,7 @@ namespace AutomationTestFramework.Tests.Selenium
         public void PostcodeValidationTestFullPath()
         {
             //Instantiate Chrome driver & main page model
-            _constructor = new MainProjectConstructor("Chrome");
+            _constructor = new MainProjectConstructor("firefox");
 
             //STEPPING FUNCTIONS
             _constructor.WebsiteHomePage.VisitHomePage();
@@ -27,4 +27,3 @@ namespace AutomationTestFramework.Tests.Selenium
         }
     }
 }
-

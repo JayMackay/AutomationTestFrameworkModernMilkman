@@ -18,7 +18,7 @@ namespace AutomationTestFramework.Library.PageObjectModels
         private IWebElement PasswordInput => this._driver.FindElement(By.Id("password"));
         private IWebElement CreateAccountButton => this._driver.FindElement(By.XPath("/img/images/Create my account.svg"));
         private IWebElement InvalidFormCheck => this._driver.FindElement(By.Id("swal2-content"));
-        
+
         //Page Object Model Constructor
         public RegistrationPage(IWebDriver driver)
         {

@@ -12,7 +12,7 @@ namespace AutomationTestFramework.Tests.SteppingFunctions
         [Given(@"I have inputted a valid postcode")]
         public void GivenIHaveInputtedAValidPostcode()
         {
-            _constructor = new MainProjectConstructor("chrome");
+            _constructor = new MainProjectConstructor("firefox");
             _constructor.WebsiteHomePage.VisitHomePage();
             Assert.That(_constructor.WebsiteHomePage.HomePageWelcomeMessage,
                 Is.EqualTo("Fresh milk and groceries delivered plastic free"));
@@ -24,7 +24,7 @@ namespace AutomationTestFramework.Tests.SteppingFunctions
         {
             _constructor.WebsiteHomePage.SearchPostcode();
         }
-        
+
         [Then(@"I should be redirected to the registration page")]
         public void ThenIShouldBeRedirectedToTheRegistrationPage()
         {
