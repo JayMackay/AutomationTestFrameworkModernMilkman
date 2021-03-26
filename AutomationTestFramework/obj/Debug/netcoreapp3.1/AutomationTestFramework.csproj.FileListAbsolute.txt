@@ -14,3 +14,7 @@ C:\Users\jared\source\repos\Automation Test Framework Modern Milkman\AutomationT
 C:\Users\jared\source\repos\Automation Test Framework Modern Milkman\AutomationTestFramework\obj\Debug\netcoreapp3.1\AutomationTestFramework.dll
 C:\Users\jared\source\repos\Automation Test Framework Modern Milkman\AutomationTestFramework\obj\Debug\netcoreapp3.1\AutomationTestFramework.pdb
 C:\Users\jared\source\repos\Automation Test Framework Modern Milkman\AutomationTestFramework\obj\Debug\netcoreapp3.1\AutomationTestFramework.csprojAssemblyReference.cache
+C:\Users\jared\source\repos\Automation Test Framework Modern Milkman\AutomationTestFramework\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\jared\source\repos\Automation Test Framework Modern Milkman\AutomationTestFramework\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\jared\source\repos\Automation Test Framework Modern Milkman\AutomationTestFramework\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\jared\source\repos\Automation Test Framework Modern Milkman\AutomationTestFramework\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.AdapterUtilities.dll

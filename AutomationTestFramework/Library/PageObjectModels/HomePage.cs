@@ -34,12 +34,15 @@ namespace AutomationTestFramework.Library.PageObjectModels
         public void EnterAvailableValidPostcode(string availablePostcode)
         {
             PostcodeInput.SendKeys(availablePostcode);
-            FindButton.Click();
         }
 
         public void EnterUnavailableValidPostcode(string unavailablePostcode)
         {
             PostcodeInput.SendKeys(unavailablePostcode);
+        }
+
+        public void SearchPostcode()
+        {
             FindButton.Click();
         }
     }

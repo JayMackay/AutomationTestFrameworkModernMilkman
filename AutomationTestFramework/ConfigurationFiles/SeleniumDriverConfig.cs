@@ -15,7 +15,7 @@ namespace AutomationTestFramework.ConfigurationFiles
 
         private void DriverSetUp(string driverName, int pageLoadWaitInSecs, int implicitWaitTimeInSecs)
         {
-            if (driverName.ToLower() == "Chrome")
+            if (driverName.ToLower() == "chrome")
             {
                 SetChromeDriver();
                 SetDriverConfiguration(pageLoadWaitInSecs, implicitWaitTimeInSecs);
@@ -25,6 +25,7 @@ namespace AutomationTestFramework.ConfigurationFiles
                 throw new Exception("Please use Chrome as the driver argument");
             }
         }
+
         public void SetChromeDriver()
         {
             Driver = new ChromeDriver();

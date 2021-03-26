@@ -14,7 +14,7 @@
           "build/_._": {}
         }
       },
-      "Cucumber.Messages/6.0.2": {
+      "Cucumber.Messages/6.0.1": {
         "type": "package",
         "dependencies": {
           "Google.Protobuf": "3.7.0"
@@ -1790,14 +1790,14 @@
         "tools/_._"
       ]
     },
-    "Cucumber.Messages/6.0.2": {
-      "sha512": "A5BkrMzZpgALgNdrSLPeJfY7UOYYL7ju4+KwVY4pnmvHXptQjHdxE2dIRxqT/EJ1SWF7nJLr22ms6jx206OaEw==",
+    "Cucumber.Messages/6.0.1": {
+      "sha512": "R/2XAU6Zwdnlgga/YLYxwbKf4ai0JYyeX25l85t0nNgagR2aP8hnqrLtJjgswuXVa2WlQdjXUfJqUX8YTjzlXw==",
       "type": "package",
-      "path": "cucumber.messages/6.0.2",
+      "path": "cucumber.messages/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "cucumber.messages.6.0.2.nupkg.sha512",
+        "cucumber.messages.6.0.1.nupkg.sha512",
         "cucumber.messages.nuspec",
         "lib/net45/Cucumber.Messages.dll",
         "lib/netstandard2.0/Cucumber.Messages.dll"
@@ -6688,7 +6688,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Cucumber.Messages >= 6.0.2",
       "MSTest.TestAdapter >= 2.2.3",
       "MSTest.TestFramework >= 2.2.3",
       "NUnit >= 3.13.1",
@@ -6748,10 +6747,6 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
-          "Cucumber.Messages": {
-            "target": "Package",
-            "version": "[6.0.2, )"
-          },
           "MSTest.TestAdapter": {
             "target": "Package",
             "version": "[2.2.3, )"
