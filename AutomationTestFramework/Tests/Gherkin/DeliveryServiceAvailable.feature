@@ -7,9 +7,3 @@ Scenario: User inputs a valid postcode where the service is available
 	Given I have inputted a valid available postcode
 	When I input a postcode where the service is available and click find
 	Then I should be redirected to the registration page
-
-Scenario: User inputs an invalid postcode
-	Given I am on the website main home page
-	When I input an invalid postcode
-	And I click the Find button
-	Then An error message will be displayed
