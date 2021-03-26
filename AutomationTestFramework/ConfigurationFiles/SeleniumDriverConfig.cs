@@ -1,5 +1,7 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Chrome;
+using WebDriverManager.DriverConfigs.Impl;
 using System;
 
 namespace AutomationTestFramework.ConfigurationFiles
@@ -20,15 +22,26 @@ namespace AutomationTestFramework.ConfigurationFiles
                 SetChromeDriver();
                 SetDriverConfiguration(pageLoadWaitInSecs, implicitWaitTimeInSecs);
             }
+            if (driverName.ToLower() == "firefox")
+            {
+                SetFirefoxDriver();
+                SetDriverConfiguration(pageLoadWaitInSecs, implicitWaitTimeInSecs);
+            }
             else
             {
-                throw new Exception("Please use Chrome as the driver argument");
+                throw new Exception("Please use Chrome or Firefox as the driver argument");
             }
         }
 
         public void SetChromeDriver()
         {
+            new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
             Driver = new ChromeDriver();
+        }
+
+        public void SetFirefoxDriver()
+        {
+            Driver = new FirefoxDriver();
         }
 
         public void SetDriverConfiguration(int pageLoadWaitInSecs, int implicitWaitTimeInSecs)
