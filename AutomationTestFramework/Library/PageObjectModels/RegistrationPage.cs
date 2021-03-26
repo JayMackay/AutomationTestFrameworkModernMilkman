@@ -9,7 +9,7 @@ namespace AutomationTestFramework.Library.PageObjectModels
         private string registrationPageUrl = AppConfigReader.RegistrationPageUrl;
 
         //Page Elements
-        private IWebElement WelcomeMessage => this._driver.FindElement(By.XPath("/html/body/section[@class='signup-page']/h"));
+        private IWebElement WelcomeMessage => this._driver.FindElement(By.XPath("/html/body/section[@class='signup-page']/h1"));
         private IWebElement FirstNameInput => this._driver.FindElement(By.Id("forename"));
         private IWebElement SurnameInput => this._driver.FindElement(By.Id("surname"));
         private IWebElement EmailInput => this._driver.FindElement(By.Id("email"));

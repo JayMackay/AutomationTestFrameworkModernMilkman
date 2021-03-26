@@ -1,6 +1,5 @@
 C:\Users\jared\Desktop\Modern Milkman\AutomationTestFramework\bin\Debug\AutomationTestFramework.dll
 C:\Users\jared\Desktop\Modern Milkman\AutomationTestFramework\bin\Debug\AutomationTestFramework.pdb
-C:\Users\jared\Desktop\Modern Milkman\AutomationTestFramework\obj\Debug\AutomationTestFramework.csprojAssemblyReference.cache
 C:\Users\jared\Desktop\Modern Milkman\AutomationTestFramework\obj\Debug\AutomationTestFramework.csproj.CoreCompileInputs.cache
 C:\Users\jared\Desktop\Modern Milkman\AutomationTestFramework\obj\Debug\AutomationTestFramework.dll
 C:\Users\jared\Desktop\Modern Milkman\AutomationTestFramework\obj\Debug\AutomationTestFramework.pdb
@@ -57,3 +56,4 @@ C:\Users\jared\Desktop\Modern Milkman\AutomationTestFramework\bin\Debug\System.B
 C:\Users\jared\Desktop\Modern Milkman\AutomationTestFramework\bin\Debug\System.Memory.xml
 C:\Users\jared\Desktop\Modern Milkman\AutomationTestFramework\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\jared\Desktop\Modern Milkman\AutomationTestFramework\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\jared\Desktop\Modern Milkman\AutomationTestFramework\obj\Debug\AutomationTestFramework.csprojAssemblyReference.cache

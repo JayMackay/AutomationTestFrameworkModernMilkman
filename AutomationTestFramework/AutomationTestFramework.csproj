@@ -124,14 +124,17 @@
     <Compile Include="Library\MainProjectConstructor.cs" />
     <Compile Include="Library\PageObjectModels\HomePage.cs" />
     <Compile Include="Library\PageObjectModels\RegistrationPage.cs" />
+    <Compile Include="Library\PageObjectModels\ServiceUnavailablePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\Selenium\PostcodeValidationTest.cs" />
-    <Compile Include="Tests\SteppingFunctions\PostcodeValidationTestSteps.cs" />
+    <Compile Include="Tests\SteppingFunctions\DeliveryServiceAvailableSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ConfigurationFiles\App.config" />
     <None Include="packages.config" />
-    <None Include="Tests\Gherkin\PostcodeValidationTest.feature" />
+    <None Include="Tests\Gherkin\DeliveryServiceAvailable.feature" />
+    <None Include="Tests\Gherkin\DeliveryServiceUnavailable.feature" />
+    <Compile Include="Tests\SteppingFunctions\DeliveryServiceUnavailableSteps.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
