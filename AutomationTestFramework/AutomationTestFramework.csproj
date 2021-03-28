@@ -137,6 +137,7 @@
   <ItemGroup>
     <None Include="ConfigurationFiles\App.config" />
     <None Include="packages.config" />
+    <None Include="README.md" />
     <None Include="Tests\Gherkin\DeliveryServiceAvailable.feature" />
     <None Include="Tests\Gherkin\DeliveryServiceUnavailable.feature" />
     <None Include="Tests\Gherkin\RegistrationConfirmation.feature" />
