@@ -28,7 +28,7 @@ namespace AutomationTestFramework.Tests.SteppingFunctions
                 "NewTestUserSurname",
                 "admin.test@mail.com",
                 "admin.test@mail.com",
-                "01234567890",
+                "07987654322",
                 "Password");
         }
 

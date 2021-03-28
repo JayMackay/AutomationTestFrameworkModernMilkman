@@ -124,23 +124,26 @@
     <Compile Include="Library\MainProjectConstructor.cs" />
     <Compile Include="Library\PageObjectModels\HomePage.cs" />
     <Compile Include="Library\PageObjectModels\LoginPage.cs" />
+    <Compile Include="Library\PageObjectModels\AccountPage.cs" />
     <Compile Include="Library\PageObjectModels\RegistrationPage.cs" />
     <Compile Include="Library\PageObjectModels\ServiceUnavailablePage.cs" />
+    <Compile Include="Library\PageObjectModels\UpdateAccountPage.cs" />
     <Compile Include="Library\PageObjectModels\UserHomePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\Selenium\UserLoginTests.cs" />
     <Compile Include="Tests\SteppingFunctions\DeliveryServiceAvailabeSteps.cs" />
     <Compile Include="Tests\SteppingFunctions\DeliveryServiceUnavailableSteps.cs" />
-    <Compile Include="Tests\SteppingFunctions\RegistrationConfirmation.cs" />
+    <Compile Include="Tests\SteppingFunctions\RegistrationConfirmationSteps.cs" />
+    <Compile Include="Tests\SteppingFunctions\UpdateUserEmailSteps.cs" />
     <Compile Include="Tests\SteppingFunctions\UserLoginSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ConfigurationFiles\App.config" />
     <None Include="packages.config" />
-    <None Include="README.md" />
     <None Include="Tests\Gherkin\DeliveryServiceAvailable.feature" />
     <None Include="Tests\Gherkin\DeliveryServiceUnavailable.feature" />
     <None Include="Tests\Gherkin\RegistrationConfirmation.feature" />
+    <None Include="Tests\Gherkin\UpdateUserEmail.feature" />
     <None Include="Tests\Gherkin\UserLogin.feature" />
   </ItemGroup>
   <ItemGroup />

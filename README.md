@@ -1,6 +1,6 @@
 ﻿# WEBSITE AUTOMATION TEST FRAMEWORK
 
-The automation test framework aims to test the specific features for The Modern Milkman website, in line with Gherkin syntax for test cases and automated test scripts. Allure framework is utilized for reporting alongside Jenkins CL tool.
+This automation test framework project aims to test the specific features for The Modern Milkman website, in line with Gherkin syntax for test cases and automated test scripts. Allure framework is utilized for reporting alongside Jenkins CL tool.
 
 To view the website visit:
 https://themodernmilkman.co.uk/ 
