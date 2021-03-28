@@ -9,7 +9,7 @@ namespace AutomationTestFramework.Library.PageObjectModels
         private string mainPageUrl = AppConfigReader.BaseUrl;
 
         //Page Elements
-        private IWebElement WelcomeMessage => this._driver.FindElement(By.XPath("/html/body/section[@class='opacitybnr1 banner-homepage']/div[@class='container']/div[@class='row']/div[@class='col-sm-12']/div[@class='banner-content']/h1"));
+        private IWebElement WelcomeMessage => this._driver.FindElement(By.XPath("/html/body/section[1]/div/div/div/div/h1"));
         private IWebElement PostcodeInput => this._driver.FindElement(By.Id("postcode"));
         private IWebElement FindButton => this._driver.FindElement(By.Id("checkPostcode5"));
         private IWebElement SignInButton => this._driver.FindElement(By.XPath("/html/body/nav/div/div/div[2]/ul/li[1]/a/img"));

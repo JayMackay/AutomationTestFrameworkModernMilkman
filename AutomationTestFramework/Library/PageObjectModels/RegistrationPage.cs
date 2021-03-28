@@ -17,8 +17,8 @@ namespace AutomationTestFramework.Library.PageObjectModels
         private IWebElement ConfirmEmailInput => this._driver.FindElement(By.Id("email1"));
         private IWebElement PhoneNumberInput => this._driver.FindElement(By.Id("phoneNo"));
         private IWebElement PasswordInput => this._driver.FindElement(By.Id("password"));
-        private IWebElement TermsCheck => this._driver.FindElement(By.XPath("/html/body/section[@class='signup-page']/div[@class='container']/div[@class='row']/div[@class='col-md-12']/div[@class='signup-form']/form[@id='signup']/div[@class='row spacing']/div[@class='col-md-12 spacing1'][2]/div[@class='custom-control custom-checkbox']/label[@class='custom-control-label']"));
-        private IWebElement CreateAccountButton => this._driver.FindElement(By.XPath("/html/body/section[@class='signup-page']/div[@class='container']/div[@class='row']/div[@class='col-md-12']/div[@class='sencontinuebtn']/button[@id='addCustomer']/img[@class='create_account_button']/@src"));
+        private IWebElement TermsCheck => this._driver.FindElement(By.XPath("//*[@id='signup']/div[4]/div[2]/div/label"));
+        private IWebElement CreateAccountButton => this._driver.FindElement(By.XPath("//*[@id='addCustomer']/img"));
         private IWebElement InvalidFormCheck => this._driver.FindElement(By.Id("swal2-content"));
 
         //Page Object Model Constructor
@@ -42,7 +42,7 @@ namespace AutomationTestFramework.Library.PageObjectModels
         {
             Actions action = new Actions(_driver); //Initializes Selenium interactions
 
-            //User form input
+            //User Form Input
             FirstNameInput.SendKeys(firstName);
             SurnameInput.SendKeys(surname);
             EmailInput.SendKeys(email);
