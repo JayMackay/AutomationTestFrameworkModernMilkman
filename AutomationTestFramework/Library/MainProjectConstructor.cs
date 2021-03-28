@@ -10,6 +10,8 @@ namespace AutomationTestFramework.Library
         public readonly HomePage WebsiteHomePage;
         public readonly RegistrationPage WebsiteRegistrationPage;
         public readonly ServiceUnavailablePage WebsiteServiceUnavailablePage;
+        public readonly UserHomePage WebsiteUserHomePage;
+        public readonly LoginPage WebsiteLoginPage;
         public readonly IWebDriver seleniumDriver;
 
         //Constructor for driver and configurations for the service
@@ -22,6 +24,8 @@ namespace AutomationTestFramework.Library
             WebsiteHomePage = new HomePage(seleniumDriver);
             WebsiteRegistrationPage = new RegistrationPage(seleniumDriver);
             WebsiteServiceUnavailablePage = new ServiceUnavailablePage(seleniumDriver);
+            WebsiteUserHomePage = new UserHomePage(seleniumDriver);
+            WebsiteLoginPage = new LoginPage(seleniumDriver);
         }
     }
 }
