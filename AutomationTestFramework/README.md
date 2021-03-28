@@ -8,15 +8,14 @@ https://themodernmilkman.co.uk/
 To submit bug reports, feature suggestions, or track changes:
 https://github.com/JayMackay/AutomationTestFrameworkModernMilkman 
 
-
 ### CONTENTS OF THIS FILE
 
-•	Requirements
-•	Recommended modules
-•	Installation
-•	Configuration
-•	Troubleshooting
-•	Maintainers
+* Requirements
+* Recommended modules
+* Installation
+* Configuration
+* Troubleshooting
+* Maintainers
 
 ### Requirements
 
@@ -74,13 +73,13 @@ The framework has no additional modifiable settings. There is no configuration.
 
 There is a known defect with Chrome Driver Instance not running. Steps to resolve:
 
-•	Install the latest Chrome Driver
-	https://chromedriver.chromium.org/downloads 
-•	Add chromedriver.exe to a folder withing your C:// drive
-•	Add the Chrome Driver directory to your Environment Variables
-•	Install WebDriverManager package and input the following code within your SeleniumDriverConfig file
-	
-```
+* Install the latest Chrome Driver
+    https://chromedriver.chromium.org/downloads 
+* Add chromedriver.exe to a folder withing your C:// drive
+* Add the Chrome Driver directory to your Environment Variables
+* Install WebDriverManager package and input the following code within your SeleniumDriverConfig file:
+
+```cs
 public void SetChromeDriver()
         {
             new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
